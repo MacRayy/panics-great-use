@@ -1,7 +1,7 @@
-import styles from './page.module.css'
+'use client'
 
 const Home = () => {
-  return <main className={styles.main}>Panics great use</main>
+  return <main>Panics great use</main>
 }
 
 export default Home
