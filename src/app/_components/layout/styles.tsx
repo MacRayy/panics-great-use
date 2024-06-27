@@ -7,12 +7,20 @@ export const LayoutContainer = styled.div(() => ({
 }))
 
 export const Header = styled.header(() => ({
-  padding: '1.5rem',
+  padding: '1.5rem 2rem',
   backgroundColor: color.primary,
 }))
 
+export const Main = styled.main(() => ({
+  minHeight: '100vh',
+  paddingLeft: '2rem',
+  paddingRight: '2rem',
+}))
+
 export const Footer = styled.footer(() => ({
-  padding: '3rem 1.5rem',
+  padding: '3rem 2rem',
   backgroundColor: color.tertiary,
   color: color.offWhite,
+  display: 'flex',
+  justifyContent: 'space-between',
 }))
