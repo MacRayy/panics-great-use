@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat: add color const">
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat: add page metadata">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/layout/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/layout/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/layout/styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_constants/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_constants/color.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <updated>1719499832033</updated>
       <workItem from="1719499833633" duration="2239000" />
       <workItem from="1719502084571" duration="4484000" />
-      <workItem from="1719506715469" duration="6562000" />
+      <workItem from="1719506715469" duration="8206000" />
     </task>
     <task id="LOCAL-00001" summary="chore: create NextJS app">
       <option name="closed" value="true" />
@@ -182,7 +179,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719524135419</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: add color const">
+      <option name="closed" value="true" />
+      <created>1719526039566</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719526039566</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: create basic layout">
+      <option name="closed" value="true" />
+      <created>1719526062784</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719526062784</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: add page metadata">
+      <option name="closed" value="true" />
+      <created>1719526072252</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1719526072252</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +222,8 @@
     <MESSAGE value="feat: remove pages.module.css" />
     <MESSAGE value="feat: create Layout" />
     <MESSAGE value="feat: add color const" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add color const" />
+    <MESSAGE value="feat: create basic layout" />
+    <MESSAGE value="feat: add page metadata" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add page metadata" />
   </component>
 </project>

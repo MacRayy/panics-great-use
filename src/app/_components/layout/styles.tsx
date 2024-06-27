@@ -1,10 +1,13 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
 
-export const LayoutContainer = styled.div(() => ({
-  display: 'flex',
-  flexDirection: 'column',
-}))
+export const LayoutContainer = styled.div(
+  () =>
+    ({
+      display: 'flex',
+      flexDirection: 'column',
+    }) as const,
+)
 
 export const Header = styled.header(() => ({
   padding: '1.5rem 2rem',
