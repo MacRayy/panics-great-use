@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="Initial commit from Create Next App" />
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="chore: update .gitignore">
+      <change afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prettier.config.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +25,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2iT1cRWhLRpHuSQc8q6rzLtXx99" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -30,16 +39,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/zsolt.makrai/DEV/panics-great-use",
+    "last_opened_file_path": "/Users/zsolt.makrai/DEV/panics-great-use/src/app",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "yarn:package.json:typescript",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/zsolt.makrai/DEV/panics-great-use/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1719499832033</updated>
       <workItem from="1719499833633" duration="2239000" />
+      <workItem from="1719502084571" duration="4484000" />
+      <workItem from="1719506715469" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="chore: create NextJS app">
       <option name="closed" value="true" />
@@ -90,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719501429039</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chore: update .gitignore">
+      <option name="closed" value="true" />
+      <created>1719502109483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719502109483</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +131,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="chore: create NextJS app" />
     <MESSAGE value="Initial commit from Create Next App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit from Create Next App" />
+    <MESSAGE value="chore: update .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update .gitignore" />
   </component>
 </project>
