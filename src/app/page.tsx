@@ -1,7 +1,13 @@
 'use client'
 
+import { UploadForm } from '@/app/_components/upload-form/UploadForm'
+
 const Home = () => {
-  return <main>Panics great use</main>
+  return (
+    <div>
+      <UploadForm />
+    </div>
+  )
 }
 
 export default Home
