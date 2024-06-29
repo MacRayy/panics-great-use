@@ -1,10 +1,14 @@
 import type { FormEvent } from 'react'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
+  const [preview, setPreview] = useState<string | null>(null)
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (event: FormEvent) => {
+    setIsLoading(true)
     event.preventDefault()
 
     const formData = new FormData()
@@ -12,8 +16,12 @@ export const UploadForm = () => {
 
     const response = await fetch('/api/file', {
       method: 'POST',
-      body: JSON.stringify(formData),
+      body: formData,
     })
+
+    const data = await response.json()
+    setPreview(data.url)
+    setIsLoading(false)
   }
 
   return (
@@ -28,8 +36,10 @@ export const UploadForm = () => {
             }
           }}
         />
-        <button type="submit">upload</button>
+        <button type="submit">{isLoading ? 'Uploading...' : 'Upload'}</button>
       </form>
+
+      {preview && <Image src={preview} alt="Uploaded Image" width={200} height={200} />}
     </div>
   )
 }
