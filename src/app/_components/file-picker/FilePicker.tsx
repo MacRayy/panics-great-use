@@ -1,5 +1,7 @@
-import type { ChangeEvent } from 'react'
+import type { ChangeEventHandler, DragEventHandler } from 'react'
 import { useRef, useState } from 'react'
+import { Button } from '@/app/_components/ui-components'
+import * as Styled from './styles'
 
 type Props = {
   isDisabled?: boolean
@@ -17,37 +19,40 @@ export const FilePicker = ({
   const inputRef = useRef<HTMLInputElement>(null)
   const [isDragActive, setIsDragActive] = useState<boolean>(false)
 
-  const handleDragEnter = (event: DragEvent) => {
+  const handleDragEnter: DragEventHandler<HTMLDivElement> = event => {
     event.preventDefault()
+    event.stopPropagation()
     setIsDragActive(true)
   }
 
-  const handleDragLeave = (event: DragEvent) => {
+  const handleDragLeave: DragEventHandler<HTMLDivElement> = event => {
     event.preventDefault()
+    event.stopPropagation()
     setIsDragActive(false)
   }
 
-  const handleDragOver = (event: DragEvent) => {
+  const handleDragOver: DragEventHandler<HTMLDivElement> = event => {
     event.preventDefault()
+    event.stopPropagation()
     setIsDragActive(true)
   }
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleDrop: DragEventHandler<HTMLDivElement> = event => {
     event.preventDefault()
-    const fileList = event.target.files
-    if (fileList) {
+    event.stopPropagation()
+    setIsDragActive(false)
+    if (isDisabled) {
+      return
+    }
+    const fileList = event.dataTransfer.files
+    if (fileList.length > 0) {
       onFiles(fileList)
     }
   }
 
-  const handleDrop = (event: DragEvent) => {
-    if (isDisabled) {
-      return
-    }
+  const handleChange: ChangeEventHandler<HTMLInputElement> = event => {
     event.preventDefault()
-    event.stopPropagation()
-    setIsDragActive(false)
-    const fileList = event?.dataTransfer?.files
+    const fileList = event.target.files
     if (fileList) {
       onFiles(fileList)
     }
@@ -67,27 +72,23 @@ export const FilePicker = ({
         accept={accept}
         ref={inputRef}
         onChange={handleChange}
-        data-test="file-input"
         multiple={false}
+        style={{ display: 'none' }}
       />
 
-      <div
+      <Styled.DropZone
         onDragEnter={handleDragEnter}
         onDrop={handleDrop}
         onDragLeave={handleDragLeave}
         onDragOver={handleDragOver}
+        isDragActive={isDragActive}
       >
         <span>Drag and drop files here. {acceptText}</span>
 
-        <button
-          type="button"
-          onClick={openFileExplorer}
-          disabled={isDisabled}
-          data-test="browse-files"
-        >
+        <Button onClick={openFileExplorer} isDisabled={isDisabled}>
           Browse files
-        </button>
-      </div>
+        </Button>
+      </Styled.DropZone>
     </>
   )
 }

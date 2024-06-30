@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import type { PutBlobResult } from '@vercel/blob'
 import { FilePicker } from '@/app/_components/file-picker/FilePicker'
+import { Button } from '@/app/_components/ui-components'
 
 export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
@@ -31,12 +32,25 @@ export const UploadForm = () => {
     setFile(file)
   }
 
+  const removeFile = () => {
+    setFile(null)
+    setPreview(null)
+  }
+
   return (
     <div>
       <h1>Upload Form</h1>
       <form onSubmit={handleSubmit}>
         <FilePicker onFiles={handleFileUpload} isDisabled={isLoading} />
-        <button type="submit">{isLoading ? 'Uploading...' : 'Upload'}</button>
+
+        {file && <span>{file.name}</span>}
+
+        <Button htmlType="submit" isDisabled={isLoading || !file}>
+          {isLoading ? 'Uploading...' : 'Upload'}
+        </Button>
+        <Button type="secondary" onClick={removeFile} isDisabled={isLoading || !file}>
+          Remove file
+        </Button>
       </form>
 
       {preview && <Image src={preview} alt="Uploaded Image" width={200} height={200} />}
