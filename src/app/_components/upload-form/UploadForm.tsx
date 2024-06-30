@@ -1,6 +1,7 @@
 import type { FormEvent } from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
+import type { PutBlobResult } from '@vercel/blob'
 
 export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
@@ -14,12 +15,16 @@ export const UploadForm = () => {
     const formData = new FormData()
     formData.append('file', file as Blob)
 
+    if (formData) {
+      console.log(formData)
+    }
+
     const response = await fetch('/api/file', {
       method: 'POST',
       body: formData,
-    })
+    } as RequestInit)
 
-    const data = await response.json()
+    const data = (await response.json()) as PutBlobResult
     setPreview(data.url)
     setIsLoading(false)
   }

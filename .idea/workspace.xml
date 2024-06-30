@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat(form): create image list component">
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat(form): remove list-style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/upload-form/UploadForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/upload-form/UploadForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
       <workItem from="1719499833633" duration="2239000" />
       <workItem from="1719502084571" duration="4484000" />
       <workItem from="1719506715469" duration="18240000" />
-      <workItem from="1719670621761" duration="4272000" />
+      <workItem from="1719670621761" duration="5355000" />
     </task>
     <task id="LOCAL-00001" summary="chore: create NextJS app">
       <option name="closed" value="true" />
@@ -300,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719674565843</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="feat(form): remove list-style">
+      <option name="closed" value="true" />
+      <created>1719756776510</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1719756776510</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +338,7 @@
     <MESSAGE value="feat: add post method for file upload" />
     <MESSAGE value="feat(form): add image preview and loading state" />
     <MESSAGE value="feat(form): create image list component" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(form): create image list component" />
+    <MESSAGE value="feat(form): remove list-style" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(form): remove list-style" />
   </component>
 </project>

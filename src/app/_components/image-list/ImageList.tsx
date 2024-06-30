@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import type { ListBlobResultBlob } from '@vercel/blob'
 
 export const ImageList = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [images, setImages] = useState<Blob[]>([])
+  const [images, setImages] = useState<ListBlobResultBlob[]>([])
 
   useEffect(() => {
     void getImages()
@@ -13,8 +14,8 @@ export const ImageList = () => {
     setIsLoading(true)
     try {
       const response = await fetch('api/file')
-      const data = await response.json()
-      setImages(data.blobs)
+      const { blobs } = (await response.json()) as { blobs: ListBlobResultBlob[] }
+      setImages(blobs)
     } catch (error) {
       console.error(error)
     }
