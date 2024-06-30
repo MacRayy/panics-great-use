@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat(form): add image preview and loading state">
-      <change afterPath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" afterDir="false" />
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat(form): create image list component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/file/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/file/route.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,7 @@
       <workItem from="1719499833633" duration="2239000" />
       <workItem from="1719502084571" duration="4484000" />
       <workItem from="1719506715469" duration="18240000" />
-      <workItem from="1719670621761" duration="3620000" />
+      <workItem from="1719670621761" duration="4272000" />
     </task>
     <task id="LOCAL-00001" summary="chore: create NextJS app">
       <option name="closed" value="true" />
@@ -287,7 +284,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719670898257</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat(form): create image list component">
+      <option name="closed" value="true" />
+      <created>1719674551117</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1719674551117</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat(form): create image list component">
+      <option name="closed" value="true" />
+      <created>1719674565843</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1719674565843</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +328,7 @@
     <MESSAGE value="chore: add post method for file upload" />
     <MESSAGE value="feat: add post method for file upload" />
     <MESSAGE value="feat(form): add image preview and loading state" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(form): add image preview and loading state" />
+    <MESSAGE value="feat(form): create image list component" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(form): create image list component" />
   </component>
 </project>
