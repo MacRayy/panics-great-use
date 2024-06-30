@@ -2,6 +2,7 @@ import type { FormEvent } from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import type { PutBlobResult } from '@vercel/blob'
+import { FilePicker } from '@/app/_components/file-picker/FilePicker'
 
 export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
@@ -25,18 +26,16 @@ export const UploadForm = () => {
     setIsLoading(false)
   }
 
+  const handleFileUpload = (fileList: FileList) => {
+    const file = fileList[0]
+    setFile(file)
+  }
+
   return (
     <div>
       <h1>Upload Form</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          type="file"
-          onChange={event => {
-            if (event.target.files) {
-              setFile(event.target?.files[0] ?? null)
-            }
-          }}
-        />
+        <FilePicker onFiles={handleFileUpload} isDisabled={isLoading} />
         <button type="submit">{isLoading ? 'Uploading...' : 'Upload'}</button>
       </form>
 
