@@ -4,6 +4,7 @@ import Image from 'next/image'
 import type { PutBlobResult } from '@vercel/blob'
 import { FilePicker } from '@/app/_components/file-picker/FilePicker'
 import { Button } from '@/app/_components/ui-components'
+import * as Styled from './styles'
 
 export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
@@ -38,22 +39,32 @@ export const UploadForm = () => {
   }
 
   return (
-    <div>
-      <h1>Upload Form</h1>
-      <form onSubmit={handleSubmit}>
+    <Styled.UploadContainer>
+      <h1>Upload image</h1>
+      <Styled.Form onSubmit={handleSubmit}>
         <FilePicker onFiles={handleFileUpload} isDisabled={isLoading} />
 
-        {file && <span>{file.name}</span>}
+        {file && <span>Current filename: {file.name}</span>}
 
-        <Button htmlType="submit" isDisabled={isLoading || !file}>
-          {isLoading ? 'Uploading...' : 'Upload'}
-        </Button>
-        <Button type="secondary" onClick={removeFile} isDisabled={isLoading || !file}>
-          Remove file
-        </Button>
-      </form>
+        <Styled.ButtonContainer>
+          <Button htmlType="submit" isDisabled={isLoading || !file}>
+            {isLoading ? 'Uploading...' : 'Upload'}
+          </Button>
+          <Button type="secondary" onClick={removeFile} isDisabled={isLoading || !file}>
+            Remove file
+          </Button>
+        </Styled.ButtonContainer>
+      </Styled.Form>
 
-      {preview && <Image src={preview} alt="Uploaded Image" width={200} height={200} />}
-    </div>
+      {preview && (
+        <Image
+          src={preview}
+          alt="Uploaded Image"
+          width={300}
+          height={300}
+          style={{ objectFit: 'cover' }}
+        />
+      )}
+    </Styled.UploadContainer>
   )
 }

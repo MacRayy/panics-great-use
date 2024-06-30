@@ -32,7 +32,13 @@ export const ImageList = () => {
       <ul>
         {images?.map(image => (
           <li key={image.pathname}>
-            <Image src={image.url} alt={image.pathname} width={200} height={200} />
+            <Image
+              src={image.url}
+              alt={image.pathname}
+              width={200}
+              height={200}
+              style={{ objectFit: 'cover' }}
+            />
           </li>
         ))}
       </ul>

@@ -13,8 +13,7 @@ export const Header = styled.header({
 
 export const Main = styled.main({
   minHeight: '100vh',
-  paddingLeft: '2rem',
-  paddingRight: '2rem',
+  padding: '2rem 3rem',
 })
 
 export const Footer = styled.footer({
