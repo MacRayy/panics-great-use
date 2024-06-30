@@ -15,10 +15,6 @@ export const UploadForm = () => {
     const formData = new FormData()
     formData.append('file', file as Blob)
 
-    if (formData) {
-      console.log(formData)
-    }
-
     const response = await fetch('/api/file', {
       method: 'POST',
       body: formData,

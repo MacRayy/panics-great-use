@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'No file provided' })
   }
 
-  const fileName = 'name' in file ? file.name : null
+  const fileName = typeof file === 'string' ? file : file.name
 
   const blob = await put(fileName, file, {
     access: 'public',

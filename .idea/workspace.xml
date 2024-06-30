@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat(form): remove list-style">
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat(form): fix type errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/upload-form/UploadForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/upload-form/UploadForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/file/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/file/route.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <workItem from="1719499833633" duration="2239000" />
       <workItem from="1719502084571" duration="4484000" />
       <workItem from="1719506715469" duration="18240000" />
-      <workItem from="1719670621761" duration="5355000" />
+      <workItem from="1719670621761" duration="6959000" />
     </task>
     <task id="LOCAL-00001" summary="chore: create NextJS app">
       <option name="closed" value="true" />
@@ -309,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719756776510</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat(form): fix type errors">
+      <option name="closed" value="true" />
+      <created>1719757865245</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1719757865245</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +347,7 @@
     <MESSAGE value="feat(form): add image preview and loading state" />
     <MESSAGE value="feat(form): create image list component" />
     <MESSAGE value="feat(form): remove list-style" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(form): remove list-style" />
+    <MESSAGE value="feat(form): fix type errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(form): fix type errors" />
   </component>
 </project>
