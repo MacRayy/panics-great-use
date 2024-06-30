@@ -1,5 +1,11 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
+import type { ButtonType } from '@/app/_components/ui-components/button/Button'
+
+type ButtonProps = {
+  buttonType: ButtonType
+  disabled: boolean
+}
 
 const buttonStyle = {
   padding: '0.5rem 1rem',
@@ -57,7 +63,7 @@ const disabledSecondaryButton = {
   },
 }
 
-export const Button = styled.button(
+export const Button = styled.button<ButtonProps>(
   buttonStyle,
   ({ buttonType }) => buttonType === 'primary' && primaryButton,
   ({ buttonType }) => buttonType === 'secondary' && secondaryButton,

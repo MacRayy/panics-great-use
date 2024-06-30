@@ -1,11 +1,15 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
 
+type DropZoneProps = {
+  isDragActive: boolean
+}
+
 const dropZoneActive = {
   backgroundColor: color.offWhite,
 }
 
-export const DropZone = styled.div(
+export const DropZone = styled.div<DropZoneProps>(
   {
     border: `2px dashed ${color.gray}`,
     borderRadius: '0.25rem',
@@ -19,5 +23,5 @@ export const DropZone = styled.div(
     gap: '1rem',
     transition: 'all 0.3s',
   },
-  ({ isDragActive }: { isActive: boolean }) => isDragActive && dropZoneActive,
+  ({ isDragActive }) => isDragActive && dropZoneActive,
 )

@@ -1,12 +1,14 @@
 import type { HTMLAttributes, PropsWithChildren } from 'react'
 import * as Styled from './styles'
 
+export type ButtonType = 'primary' | 'secondary'
+
 type ButtonProps = Omit<HTMLAttributes<HTMLButtonElement>, 'disabled type'> &
   PropsWithChildren<{
-    onClick: () => void
+    onClick?: () => void
     isDisabled?: boolean
     htmlType?: 'button' | 'submit' | 'reset'
-    type?: 'primary' | 'secondary'
+    type?: ButtonType
   }>
 
 export const Button = ({
