@@ -6,7 +6,7 @@ type SkeletonProps = HTMLAttributes<HTMLDivElement> & {
   quantity?: number
 }
 
-export const Skeleton = ({ isSquare, quantity, ...rest }: SkeletonProps) => {
+export const Skeleton = ({ isSquare = false, quantity, ...rest }: SkeletonProps) => {
   return Array.from({ length: quantity ?? 1 }).map((_, i) => (
     <Styled.Skeleton key={i} isSquare={isSquare} {...rest} />
   ))

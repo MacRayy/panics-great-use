@@ -1,6 +1,10 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
 
+type SkeletonType = {
+  isSquare?: boolean
+}
+
 const skeletonStyle = {
   width: '100%',
   minWidth: '1rem',
@@ -28,4 +32,7 @@ const skeletonSquareStyle = {
   height: '13rem',
 }
 
-export const Skeleton = styled.div(skeletonStyle, ({ isSquare }) => isSquare && skeletonSquareStyle)
+export const Skeleton = styled.div<SkeletonType>(
+  skeletonStyle,
+  ({ isSquare }) => isSquare && skeletonSquareStyle,
+)
