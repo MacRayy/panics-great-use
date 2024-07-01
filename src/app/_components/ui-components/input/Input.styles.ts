@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
 
-export const Input = styled.input({
+const inputStyles = {
   padding: '0.5rem 1rem',
   borderRadius: '2rem',
   border: `1px solid ${color.primary}`,
@@ -12,4 +12,6 @@ export const Input = styled.input({
   '&:focus': {
     borderColor: color.tertiary,
   },
-})
+}
+
+export const Input = styled.input(inputStyles)

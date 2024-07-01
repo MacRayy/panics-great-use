@@ -1,7 +1,7 @@
 import type { ChangeEventHandler, DragEventHandler } from 'react'
 import { useRef, useState } from 'react'
 import { Button } from '@/app/_components/ui-components'
-import * as Styled from './styles'
+import * as Styled from './FilePicker.styles'
 
 type Props = {
   isDisabled?: boolean
