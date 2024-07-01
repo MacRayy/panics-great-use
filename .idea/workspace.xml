@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="fix: change default value of search context">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat: create basic input component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/file-picker/FilePicker.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/file-picker/FilePicker.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/file-picker/FilePicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/file-picker/FilePicker.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/upload-form/UploadForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/upload-form/UploadForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,24 +30,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/image-listing-loading",
-    "last_opened_file_path": "/Users/zsolt.makrai/DEV/panics-great-use/src/app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/zsolt.makrai/DEV/panics-great-use/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/file-upload-restrict&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zsolt.makrai/DEV/panics-great-use/src/app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/zsoltmakrai/DEV/panics-great-use/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app" />
@@ -69,6 +69,7 @@
       <workItem from="1719502084571" duration="4484000" />
       <workItem from="1719506715469" duration="18240000" />
       <workItem from="1719670621761" duration="25906000" />
+      <workItem from="1719855801704" duration="571000" />
     </task>
     <task id="LOCAL-00005" summary="chore: create NextJS app">
       <option name="closed" value="true" />

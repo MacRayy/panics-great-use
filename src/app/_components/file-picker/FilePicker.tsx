@@ -8,6 +8,8 @@ type Props = {
   accept?: string
   acceptText?: string
   onFiles: (fileList: FileList) => void
+  hasError?: boolean
+  setHasError?: (hasError: boolean) => void
 }
 
 export const FilePicker = ({
@@ -15,9 +17,11 @@ export const FilePicker = ({
   onFiles,
   accept = 'image/*',
   acceptText = 'Only image files are accepted.',
+  hasError = false,
+  setHasError,
 }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null)
-  const [isDragActive, setIsDragActive] = useState<boolean>(false)
+  const [isDragActive, setIsDragActive] = useState(false)
 
   const handleDragEnter: DragEventHandler<HTMLDivElement> = event => {
     event.preventDefault()
@@ -44,6 +48,11 @@ export const FilePicker = ({
     if (isDisabled) {
       return
     }
+    if (!event.dataTransfer.files[0].type.includes('image')) {
+      setHasError(true)
+      return
+    }
+    setHasError(false)
     const fileList = event.dataTransfer.files
     if (fileList.length > 0) {
       onFiles(fileList)
@@ -56,6 +65,7 @@ export const FilePicker = ({
     if (fileList) {
       onFiles(fileList)
     }
+    setHasError(false)
   }
 
   const openFileExplorer = () => {
@@ -82,12 +92,17 @@ export const FilePicker = ({
         onDragLeave={handleDragLeave}
         onDragOver={handleDragOver}
         isDragActive={isDragActive}
+        hasError={hasError}
       >
         <span>Drag and drop files here. {acceptText}</span>
 
         <Button onClick={openFileExplorer} isDisabled={isDisabled}>
           Browse files
         </Button>
+
+        {hasError && (
+          <Styled.ErrorText>Wrong file format, please select an image file.</Styled.ErrorText>
+        )}
       </Styled.DropZone>
     </>
   )
