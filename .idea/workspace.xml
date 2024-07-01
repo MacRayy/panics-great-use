@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="refactor: move search to the header, convert to context and add empty state">
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="fix: change default value of search context">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_providers/SearchProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_providers/SearchProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/skeleton/Skeleton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +69,6 @@
       <workItem from="1719502084571" duration="4484000" />
       <workItem from="1719506715469" duration="18240000" />
       <workItem from="1719670621761" duration="25906000" />
-    </task>
-    <task id="LOCAL-00004" summary="chore: create NextJS app">
-      <option name="closed" value="true" />
-      <created>1719501221894</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1719501221894</updated>
     </task>
     <task id="LOCAL-00005" summary="chore: create NextJS app">
       <option name="closed" value="true" />
@@ -460,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719851835678</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix: change default value of search context">
+      <option name="closed" value="true" />
+      <created>1719852182880</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1719852182880</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +471,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat(form): add image preview and loading state" />
     <MESSAGE value="feat(form): create image list component" />
     <MESSAGE value="feat(form): remove list-style" />
     <MESSAGE value="feat(form): fix type errors" />
@@ -494,7 +495,8 @@
     <MESSAGE value="refactor: rename style files" />
     <MESSAGE value="refactor: create loading skeleton" />
     <MESSAGE value="refactor: move search to the header, convert to context and add empty state" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: move search to the header, convert to context and add empty state" />
+    <MESSAGE value="fix: change default value of search context" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: change default value of search context" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
