@@ -50,7 +50,7 @@ export const UploadForm = () => {
           <Button htmlType="submit" isDisabled={isLoading || !file}>
             {isLoading ? 'Uploading...' : 'Upload'}
           </Button>
-          <Button type="secondary" onClick={removeFile} isDisabled={isLoading || !file}>
+          <Button type="danger" onClick={removeFile} isDisabled={isLoading || !file}>
             Remove file
           </Button>
         </Styled.ButtonContainer>
