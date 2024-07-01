@@ -12,7 +12,7 @@ export const Main = styled.main({
   padding: '2rem 1rem',
   display: 'flex',
   flexDirection: 'column',
-  gap: '2rem',
+  gap: '4rem',
 
   [mediaQueries.tablet]: {
     padding: '2rem 3rem',
