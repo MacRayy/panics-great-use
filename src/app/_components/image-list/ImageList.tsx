@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import type { ListBlobResultBlob } from '@vercel/blob'
+import * as Styled from './styles'
 
 export const ImageList = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -29,19 +29,13 @@ export const ImageList = () => {
   ) : (
     <div>
       <h1>Image List</h1>
-      <ul>
+      <Styled.List>
         {images?.map(image => (
-          <li key={image.pathname}>
-            <Image
-              src={image.url}
-              alt={image.pathname}
-              width={200}
-              height={200}
-              style={{ objectFit: 'cover' }}
-            />
-          </li>
+          <Styled.ListItem key={image.pathname}>
+            <Styled.Image src={image.url} alt={image.pathname} fill />
+          </Styled.ListItem>
         ))}
-      </ul>
+      </Styled.List>
     </div>
   )
 }

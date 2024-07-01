@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
+import { mediaQueries } from '@/app/_constants/mediaQueries'
 
 export const LayoutContainer = styled.div({
   display: 'flex',
@@ -13,7 +14,11 @@ export const Header = styled.header({
 
 export const Main = styled.main({
   minHeight: '100vh',
-  padding: '2rem 3rem',
+  padding: '2rem 1rem',
+
+  [mediaQueries.tablet]: {
+    padding: '2rem 3rem',
+  },
 })
 
 export const Footer = styled.footer({
