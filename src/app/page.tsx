@@ -5,11 +5,11 @@ import { ImageList } from '@/app/_components/image-list/ImageList'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <UploadForm />
 
       <ImageList />
-    </div>
+    </>
   )
 }
 

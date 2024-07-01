@@ -7,14 +7,12 @@ export const LayoutContainer = styled.div({
   flexDirection: 'column',
 } as const)
 
-export const Header = styled.header({
-  padding: '0.5rem 2rem',
-  backgroundColor: color.primary,
-})
-
 export const Main = styled.main({
   minHeight: '100vh',
   padding: '2rem 1rem',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '2rem',
 
   [mediaQueries.tablet]: {
     padding: '2rem 3rem',
