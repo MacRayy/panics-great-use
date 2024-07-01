@@ -1,7 +1,7 @@
 import type { ChangeEventHandler } from 'react'
 import { useContext, useEffect, useState } from 'react'
 import type { ListBlobResultBlob } from '@vercel/blob'
-import * as Styled from './styles'
+import * as Styled from './ImageList.styles'
 import { SearchContext } from '@/app/_providers/SearchProvider'
 
 export const ImageList = () => {

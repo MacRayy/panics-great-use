@@ -1,5 +1,5 @@
 import type { HTMLAttributes, PropsWithChildren } from 'react'
-import * as Styled from './styles'
+import * as Styled from './Button.styles'
 
 export type ButtonType = 'primary' | 'secondary' | 'danger'
 

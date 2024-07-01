@@ -4,7 +4,7 @@ import Image from 'next/image'
 import type { PutBlobResult } from '@vercel/blob'
 import { FilePicker } from '@/app/_components/file-picker/FilePicker'
 import { Button } from '@/app/_components/ui-components'
-import * as Styled from './styles'
+import * as Styled from './UploadForm.styles'
 
 export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
