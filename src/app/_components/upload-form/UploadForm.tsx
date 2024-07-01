@@ -10,6 +10,7 @@ export const UploadForm = () => {
   const [file, setFile] = useState<File | null>(null)
   const [preview, setPreview] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   const handleSubmit = async (event: FormEvent) => {
     setIsLoading(true)
@@ -34,6 +35,7 @@ export const UploadForm = () => {
   }
 
   const removeFile = () => {
+    setHasError(false)
     setFile(null)
     setPreview(null)
   }
@@ -42,7 +44,12 @@ export const UploadForm = () => {
     <Styled.UploadContainer>
       <h1>Upload image</h1>
       <Styled.Form onSubmit={handleSubmit}>
-        <FilePicker onFiles={handleFileUpload} isDisabled={isLoading} />
+        <FilePicker
+          onFiles={handleFileUpload}
+          isDisabled={isLoading}
+          hasError={hasError}
+          setHasError={setHasError}
+        />
 
         {file && <span>Current filename: {file.name}</span>}
 
