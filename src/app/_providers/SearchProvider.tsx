@@ -6,7 +6,7 @@ import { createContext, useState } from 'react'
 export const SearchContext = createContext({
   searchText: '',
   handleSearch: _ => {},
-  resetSearch: _ => {},
+  resetSearch: () => {},
 })
 
 export const SearchProvider = ({ children }: PropsWithChildren) => {
