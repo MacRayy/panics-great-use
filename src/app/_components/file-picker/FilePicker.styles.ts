@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { color } from '@/app/_constants/color'
+import type { CSSObject } from '@emotion/react'
 
 type DropZoneProps = {
   isDragActive: boolean
@@ -10,7 +11,7 @@ const dropZoneActive = {
   backgroundColor: color.offWhite,
 }
 
-const dropZoneStyle = {
+const dropZoneStyle: CSSObject = {
   border: `2px dashed ${color.gray}`,
   borderRadius: '0.25rem',
   padding: '1rem',
