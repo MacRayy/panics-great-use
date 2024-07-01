@@ -1,7 +1,7 @@
 import type { HTMLAttributes, PropsWithChildren } from 'react'
 import * as Styled from './styles'
 
-export type ButtonType = 'primary' | 'secondary'
+export type ButtonType = 'primary' | 'secondary' | 'danger'
 
 type ButtonProps = Omit<HTMLAttributes<HTMLButtonElement>, 'disabled type'> &
   PropsWithChildren<{

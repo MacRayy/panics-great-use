@@ -41,6 +41,11 @@ const secondaryButton = {
   },
 }
 
+const dangerButton = {
+  backgroundColor: color.danger,
+  color: color.white,
+}
+
 const disabledPrimaryButton = {
   backgroundColor: color.lightGray,
   cursor: 'not-allowed',
@@ -63,10 +68,17 @@ const disabledSecondaryButton = {
   },
 }
 
+const disabledDangerButton = {
+  backgroundColor: color.lightGray,
+  cursor: 'not-allowed',
+}
+
 export const Button = styled.button<ButtonProps>(
   buttonStyle,
   ({ buttonType }) => buttonType === 'primary' && primaryButton,
   ({ buttonType }) => buttonType === 'secondary' && secondaryButton,
+  ({ buttonType }) => buttonType === 'danger' && dangerButton,
   ({ disabled, buttonType }) => disabled && buttonType && disabledPrimaryButton,
   ({ disabled, buttonType }) => disabled && buttonType && disabledSecondaryButton,
+  ({ disabled, buttonType }) => disabled && buttonType && disabledDangerButton,
 )
