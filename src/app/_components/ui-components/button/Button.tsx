@@ -17,9 +17,16 @@ export const Button = ({
   htmlType = 'button',
   type = 'primary',
   onClick,
+  ...rest
 }: ButtonProps) => {
   return (
-    <Styled.Button buttonType={type} type={htmlType} disabled={isDisabled} onClick={onClick}>
+    <Styled.Button
+      buttonType={type}
+      type={htmlType}
+      disabled={isDisabled}
+      onClick={onClick}
+      {...rest}
+    >
       {children}
     </Styled.Button>
   )
