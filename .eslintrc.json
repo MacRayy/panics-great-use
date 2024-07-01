@@ -90,7 +90,7 @@
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "no-empty-function": "off",
-    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-empty-function": "warn",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "jsx-a11y/no-static-element-interactions": "warn",

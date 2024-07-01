@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat: use danger button in form">
-      <change afterPath="$PROJECT_DIR$/src/app/_components/image-list/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/_components/ui-components/input/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/_constants/mediaQueries.ts" afterDir="false" />
+    <list default="true" id="8928575e-805b-4ed6-adf0-c3f9b4af20de" name="Changes" comment="feat: create basic input component">
+      <change afterPath="$PROJECT_DIR$/src/app/_components/layout/Header.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/_components/layout/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/_components/ui-components/input/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/_providers/SearchProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/image-list/ImageList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/layout/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/layout/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/layout/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/layout/Layout.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_components/ui-components/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/ui-components/input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -402,7 +406,39 @@
       <option name="project" value="LOCAL" />
       <updated>1719819034727</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="refactor(button): add rest">
+      <option name="closed" value="true" />
+      <created>1719833687057</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1719833687057</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat: create mediaQueries">
+      <option name="closed" value="true" />
+      <created>1719833709567</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1719833709567</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat: update ImageList layout">
+      <option name="closed" value="true" />
+      <created>1719833729900</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1719833729900</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat: create basic input component">
+      <option name="closed" value="true" />
+      <created>1719833826139</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1719833826139</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,10 +447,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat: remove pages.module.css" />
-    <MESSAGE value="feat: create Layout" />
-    <MESSAGE value="feat: add color const" />
-    <MESSAGE value="feat: create basic layout" />
     <MESSAGE value="feat: add page metadata" />
     <MESSAGE value="fix: add as const to fix build error with emotion" />
     <MESSAGE value="feat: add inter to html" />
@@ -436,7 +468,11 @@
     <MESSAGE value="fix: add missing types" />
     <MESSAGE value="feat: add danger type to button" />
     <MESSAGE value="feat: use danger button in form" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: use danger button in form" />
+    <MESSAGE value="refactor(button): add rest" />
+    <MESSAGE value="feat: create mediaQueries" />
+    <MESSAGE value="feat: update ImageList layout" />
+    <MESSAGE value="feat: create basic input component" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create basic input component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
